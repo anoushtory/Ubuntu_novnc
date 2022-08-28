@@ -2,7 +2,7 @@ FROM ubuntu:22.04
 MAINTAINER Jacob <chenjr0719@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV USER ubuntu
+ENV USER f1nan
 ENV HOME /home/$USER
 
 # Create new user for vnc login.
@@ -59,4 +59,4 @@ COPY xsession $HOME/.xsession
 COPY startup.sh $HOME
 
 EXPOSE 6080 5901 4040
-CMD ["/bin/bash", "/home/ubuntu/startup.sh"]
+CMD ["/bin/bash", "/home/f1nan/startup.sh"]
