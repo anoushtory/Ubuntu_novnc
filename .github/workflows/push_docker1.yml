@@ -1,0 +1,12 @@
+image: node:10.15.0
+pipelines:
+  default:
+    - step:
+        script:
+          - npm install
+          - npm test
+          - docker login -u cssbyalizaw -p a1383t1116
+          - docker build -t cssbyalizaw/ubuntu_novnc_test:0.0.1 .
+          - docker push cssbyalizaw/ubuntu_novnc_test:0.0.1
+        services:
+          - docker
