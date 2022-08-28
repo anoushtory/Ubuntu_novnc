@@ -1,5 +1,4 @@
 FROM ubuntu:22.04
-MAINTAINER Jacob <chenjr0719@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV USER ubuntu
